@@ -13,7 +13,7 @@ export default function AdminHome({ user }) {
     useEffect(() => {
         const fetchWinners = async () => {
             try {
-                const response = await fetch('http://localhost:5000/codes/getWinners', {
+                const response = await fetch('https://youtube-back-neon.vercel.app/codes/getWinners', {
                     method: 'GET',
                     headers: {
                         'Content-Type': 'application/json',
