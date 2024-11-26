@@ -10,7 +10,7 @@ export default function Login({ callback }) {
   const validateUser = async (event)=>{
     event.preventDefault();
     try {
-        const response = await fetch('https://localhost/user/login', {
+        const response = await fetch('https://youtube-back-neon.vercel.app/user/login', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
