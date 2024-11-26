@@ -27,7 +27,7 @@ export default function Signup({ role }) {
     }
 
     try {
-      const response = await fetch('https://youtube-back-two.vercel.app/user/signup', {
+      const response = await fetch('https://youtube-back-neon.vercel.app/user/signup', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
