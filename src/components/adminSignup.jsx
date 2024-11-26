@@ -19,7 +19,7 @@ export default function SignupAdmin({ role }) {
     
     
         try {
-          const response = await fetch('https://ganacomoloco-back.vercel.app/user/signupadmin', {
+          const response = await fetch('https://youtube-back-neon.vercel.app/user/signupadmin', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
