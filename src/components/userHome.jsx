@@ -31,7 +31,7 @@ const UserHome = () => {
         }
     
         try {
-            const response = await fetch(`https://localhost:5000/app/api/list-videos/${userId}`);
+            const response = await fetch(`https://youtube-back-neon.vercel.app/api/list-videos/${userId}`);
     
             if (!response.ok) {
                 console.error('Error al obtener videos:', await response.text());
@@ -78,7 +78,7 @@ const UserHome = () => {
         formData.append("userId", userId); // Adjuntar el ID del usuario
 
         try {
-            const response = await fetch("https://localhost:5000/app/api/upload-video", {
+            const response = await fetch("https://youtube-back-neon.vercel.app/api/upload-video", {
                 method: "POST",
                 body: formData,
             });
